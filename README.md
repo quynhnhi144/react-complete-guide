@@ -66,3 +66,67 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### Define `REACT`
+
+- React is a Javascript Library for building User Interface
+- Run on browser ==> run in the browser, don't have to wait server response to get a new page or render something new
+- React using Components for building UI
+
+### Implement `REACT`
+
+Component in React like a function and we use to reuse code
+
+- Component can have paramerter like a object when we reference to
+- When want to reuse or duplicate "Html" code. Should create a id, which can reference the "HTML" code parameters
+- "render" function: 2 parameters:
+  _ function
+  _ position which we want to use
+
+### ES06
+
+2.let & const
+
+- let: variable value
+- const: constant value
+  3.Arrow functions:
+- Syntax: `const <name_func> = () => {}`
+- No more issuses with the "this" keywork
+- When use "this" inside an arrow function it will always keep its context and dont change surprisingly on runtime
+
+  4.Export and Import:
+
+- Two ways to import:
+
+  - default exports: we can call it by the another name - import person from .... - import prs from ....
+
+
+      * named exports: we cann't call it by the another name, must call defined name
+      	- import {base} from ...
+      	- import {base as Base} from ...
+
+      * If have many constant want to import from 1 file: use *
+      	- import * as bundled from ...  ==> when we access variable we can use: bundled.name, bundled.base or ....
+
+5.Classes:
+
+7.Spread & Rest operator:
+
+- Speard: copy old array/object to new array/object with the same content
+- Rest: converse elements to array and implement array's methods
+  8.Destructuring:
+- Creating the variables referencing elements and propertities in array and object respectively
+  >     const numbers = [1,2,3];
+  >     [num1,num2] = numbers;
+  >
+  >     // [num1,,num3] = numbers;
+  >     console.log(num1,num2);
+  >     // console.log(num1,num3);
+
+### Install `REACT PROJECT`
+
+- install package:
+  >      1.npm install create-react-app -g
+  >      2.create-react-app <name_project>
+  >      3.cd <name_project>
+  >      4.npm start
