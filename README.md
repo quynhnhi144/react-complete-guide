@@ -158,3 +158,6 @@ Component in React like a function and we use to reuse code
 
 * #### Props Children
     * The place lies between opening and closing tag
+
+* #### Handling events with methods
+    * Just add reference for function, don't add parenthese
