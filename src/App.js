@@ -1,23 +1,36 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Person from './Person/Person';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Hi I'm React</h1>
-      <p>This is working!!!</p>
-      <Person name="Max" age="28" />
-      <Person name="Manu" age="26">My Hobbies: Racing</Person>
-      <Person name="Stephanie" age="24" />
-    </div>
+class App extends Component {
 
-    // It hasn'tlocation in component scope ==> Error 
-    //<p>This is working!!!</p>
-  );
+  state = {
+    persons: [
+      { name: "Max", age: 28 },
+      { name: "Manu", age: 26 },
+      { name: "Stephanie", age: 24 },
+    ]
+  }
 
-  // This is some things will be compiled
-  //return React.createElement('div', { className: 'App' }, null, React.createElement('h1', null, 'Hi I\'m React'));
+  render() {
+    return (
+      <div className="App">
+        <h1>Hi I'm React</h1>
+        <p>This is working!!!</p>
+        <button>Switch name</button>
+        <Person name={this.state.persons[0].name} age={this.state.persons[0].age} />
+        <Person name={this.state.persons[1].name} age={this.state.persons[1].age} >My Hobbies: Racing</Person>
+        <Person name={this.state.persons[2].name} age={this.state.persons[2].age} />
+      </div>
+
+      // It hasn'tlocation in component scope ==> Error 
+      //<p>This is working!!!</p>
+    );
+    // This is some things will be compiled
+    //return React.createElement('div', { className: 'App' }, null, React.createElement('h1', null, 'Hi I\'m React'));
+
+  }
+
 }
 
 export default App;
