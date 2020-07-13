@@ -161,3 +161,6 @@ Component in React like a function and we use to reuse code
 
 * #### Handling events with methods
     * Just add reference for function, don't add parenthese
+
+* #### Manipulating the `State`
+    * `setState` method in `Component` which allows us to update this special `state property` here and it will then ensure that React gets to know about this update and updates the DOM 
