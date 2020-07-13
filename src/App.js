@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+import Person from './Person/Person';
 import './App.css';
 
 function App() {
@@ -7,6 +7,7 @@ function App() {
     <div className="App">
       <h1>Hi I'm React</h1>
       <p>This is working!!!</p>
+      <Person />
     </div>
 
     // It hasn'tlocation in component scope ==> Error 

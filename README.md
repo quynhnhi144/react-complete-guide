@@ -147,5 +147,7 @@ Component in React like a function and we use to reuse code
 
 
 ### The basic features and syntax
-  #### JSX
-* Use `React.createElement(<another_component, null, children_of_another_component>)` it has at leat three arguments ==> This is some things will compiled for `html code`
+*  #### JSX
+    * Use `React.createElement(<another_component, null, children_of_another_component>)` it has at leat three arguments ==> This is some things will compiled for `html code`
+* #### Functional Component
+    * Like component => This is another way we can create the component in `React`
