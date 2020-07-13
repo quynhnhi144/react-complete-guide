@@ -8,6 +8,8 @@ function App() {
       <h1>Hi I'm React</h1>
       <p>This is working!!!</p>
       <Person />
+      <Person />
+      <Person />
     </div>
 
     // It hasn'tlocation in component scope ==> Error 

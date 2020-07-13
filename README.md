@@ -148,6 +148,10 @@ Component in React like a function and we use to reuse code
 
 ### The basic features and syntax
 *  #### JSX
+    * JSX is just syntactic sugar for JavaScript, allowing you to write HTMLish code instead of nested React.createElement(...) calls.
     * Use `React.createElement(<another_component, null, children_of_another_component>)` it has at leat three arguments ==> This is some things will compiled for `html code`
 * #### Functional Component
     * Like component => This is another way we can create the component in `React`
+
+* #### Working with component and re-using them
+    * We can focus our code in each file and hence make it much more maintainable
