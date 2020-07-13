@@ -68,11 +68,13 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
 ### Define `REACT`
+- ![Two kinds of Application](public/images/understanding-single-and-multi-page-apps.png)
 
 - React is a Javascript Library for building User Interface
 - Run on browser ==> run in the browser, don't have to wait server response to get a new page or render something new
 - React using Components for building UI
-
+- ![Why React](public/images/why-should-we-choose-react.png)
+-------------------------------------------------------------
 
 ### Implement `REACT`
 
@@ -83,6 +85,7 @@ Component in React like a function and we use to reuse code
 - "render" function: 2 parameters:
   _ function
   _ position which we want to use
+
 
 ### ES06
 
@@ -95,7 +98,7 @@ Component in React like a function and we use to reuse code
 - No more issuses with the "this" keywork
 - When use "this" inside an arrow function it will always keep its context and dont change surprisingly on runtime
 
-  4.Export and Import:
+4.Export and Import:
 
 - Two ways to import:
 
@@ -109,13 +112,28 @@ Component in React like a function and we use to reuse code
       * If have many constant want to import from 1 file: use *
       	- import * as bundled from ...  ==> when we access variable we can use: bundled.name, bundled.base or ....
 
+- ![Export and Import Module](public/images/exports-imports-module.png)
+
+----------------------------------------------------------------
 5.Classes:
+![Understanding classes](public/images/understanding-classes.png)
+
+---------------------------------------------------------------
+
+6.Classes, Properties & Methods
+- ![Classes, Properties & Methods](public/images/classes-properties-and-methods.png)
+
+----------------------------------------------------------------
 
 7.Spread & Rest operator:
 
 - Speard: copy old array/object to new array/object with the same content
 - Rest: converse elements to array and implement array's methods
-  8.Destructuring:
+![Spread & Rest operator](public/images/the-spread-rest-operator.png)
+
+----------------------------------------------------------------
+
+8.Destructuring:
 - Creating the variables referencing elements and propertities in array and object respectively
   >     const numbers = [1,2,3];
   >     [num1,num2] = numbers;
@@ -123,6 +141,10 @@ Component in React like a function and we use to reuse code
   >     // [num1,,num3] = numbers;
   >     console.log(num1,num2);
   >     // console.log(num1,num3);
+
+- ![Destructuring](public/images/destructuring.png)
+
+----------------------------------------------------------------
 
 ### Install `REACT PROJECT`
 
@@ -144,8 +166,10 @@ Component in React like a function and we use to reuse code
 ### Component
 
 - This app component actually gets used in the index.js file where you render it into the place of this root
+- ![Component](public/images/components.png)
 
-
+- ![Component Definition](public/images/component-definition.png)
+----------------------------------------------------------------
 ### The basic features and syntax
 *  #### JSX
     * JSX is just syntactic sugar for JavaScript, allowing you to write HTMLish code instead of nested React.createElement(...) calls.
@@ -158,9 +182,11 @@ Component in React like a function and we use to reuse code
 
 * #### Props Children
     * The place lies between opening and closing tag
+    * ![Props](public/images/props.png)
 
 * #### Handling events with methods
     * Just add reference for function, don't add parenthese
 
 * #### Manipulating the `State`
     * `setState` method in `Component` which allows us to update this special `state property` here and it will then ensure that React gets to know about this update and updates the DOM 
+    * ![Manipulating State](public/images/manipulating-state.png)
