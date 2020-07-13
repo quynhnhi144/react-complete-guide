@@ -6,7 +6,11 @@ function App() {
   return (
     <div className="App">
       <h1>Hi I'm React</h1>
+      <p>This is working!!!</p>
     </div>
+
+    // It hasn'tlocation in component scope ==> Error 
+    //<p>This is working!!!</p>
   );
 
   // This is some things will be compiled
