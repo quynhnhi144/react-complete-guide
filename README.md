@@ -144,3 +144,8 @@ Component in React like a function and we use to reuse code
 ### Component
 
 - This app component actually gets used in the index.js file where you render it into the place of this root
+
+
+### The basic features and syntax
+  #### JSX
+* Use `React.createElement(<another_component, null, children_of_another_component>)` it has at leat three arguments ==> This is some things will compiled for `html code`
