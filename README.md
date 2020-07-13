@@ -155,3 +155,6 @@ Component in React like a function and we use to reuse code
 
 * #### Working with component and re-using them
     * We can focus our code in each file and hence make it much more maintainable
+
+* #### Props Children
+    * The place lies between opening and closing tag
