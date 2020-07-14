@@ -207,3 +207,8 @@ Component in React like a function and we use to reuse code
     * :key: **Using `Hook` doesn't merge whatever you pass to it with the old state ==> instead it replaces the old state with it**
 
     * ![Using the useState() Hook for State Manipulation](public/images/state-in-functional-components.png)
+    ----------------------------------------------------------
+
+* #### Stateless and Stateful components
+    * `Stateful component = smart or container component`: is a component that manages state, no matter if it's using the `useState` hook or a class-based approach with the state property
+    * `Stateless component`: has no internal state manangement and call `dumb` 
