@@ -212,3 +212,11 @@ Component in React like a function and we use to reuse code
 * #### Stateless and Stateful components
     * `Stateful component = smart or container component`: is a component that manages state, no matter if it's using the `useState` hook or a class-based approach with the state property
     * `Stateless component`: has no internal state manangement and call `dumb` 
+
+* #### Passing method references between components
+    * Can pass methods also as props so that you can call a method which might change the state in another component
+      * > Ex: App.js and Peson.js 
+
+        > In App.js: add another property (click={this.switchNameHandler.bind(this, "Max!")})
+        
+        > In Person.js: call `onClick` method (onClick={this.switchNameHandler.bind(this, "Max!")})
