@@ -190,3 +190,20 @@ Component in React like a function and we use to reuse code
 * #### Manipulating the `State`
     * `setState` method in `Component` which allows us to update this special `state property` here and it will then ensure that React gets to know about this update and updates the DOM 
     * ![Manipulating State](public/images/manipulating-state.png)
+    -----------------------------------------------------------
+
+* #### Using the useState() Hook for State Manipulation
+    * > What is a Hook? A Hook is a special function that lets you “hook into” React features. For example, useState is a Hook that lets you add React state to function components. We’ll learn other Hooks later.
+
+      > When would I use a Hook? If you write a function component and realize you need to add some state to it, previously you had to convert it to a class. Now you can use a Hook inside the existing function component. We’re going to do that right now!
+    * Change `component` to `functional component`
+    * useState() nethod:
+      * always returns an array with exactly 2 elements
+      * reference a constant: [state, setState: this is a method]
+        * state: gives access to this object
+        * setState: method to update state
+    * :key: **When use `useState` must change `lowerCase` to `capital`**
+
+    * :key: **Using `Hook` doesn't merge whatever you pass to it with the old state ==> instead it replaces the old state with it**
+
+    * ![Using the useState() Hook for State Manipulation](public/images/state-in-functional-components.png)
