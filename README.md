@@ -220,3 +220,6 @@ Component in React like a function and we use to reuse code
         > In App.js: add another property (click={this.switchNameHandler.bind(this, "Max!")})
         
         > In Person.js: call `onClick` method (onClick={this.switchNameHandler.bind(this, "Max!")})
+
+* #### Adding two way binding
+    * Using `onChange` method. It will be fired whenever the value in this input changes
