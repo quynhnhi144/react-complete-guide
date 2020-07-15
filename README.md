@@ -69,9 +69,22 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 ### Define `REACT`
 
+# <<<<<<< HEAD
+
+- ![Two kinds of Application](public/images/understanding-single-and-multi-page-apps.png)
+
+  > > > > > > > the-basic-features-and-syntax
+
 - React is a Javascript Library for building User Interface
 - Run on browser ==> run in the browser, don't have to wait server response to get a new page or render something new
 - React using Components for building UI
+  <<<<<<< HEAD
+  =======
+- ![Why React](public/images/why-should-we-choose-react.png)
+
+---
+
+> > > > > > > the-basic-features-and-syntax
 
 ### Implement `REACT`
 
@@ -82,6 +95,10 @@ Component in React like a function and we use to reuse code
 - "render" function: 2 parameters:
   _ function
   _ position which we want to use
+
+# <<<<<<< HEAD
+
+> > > > > > > the-basic-features-and-syntax
 
 ### ES06
 
@@ -108,20 +125,43 @@ Component in React like a function and we use to reuse code
       * If have many constant want to import from 1 file: use *
       	- import * as bundled from ...  ==> when we access variable we can use: bundled.name, bundled.base or ....
 
+- ![Export and Import Module](public/images/exports-imports-module.png)
+
+---
+
 5.Classes:
+![Understanding classes](public/images/understanding-classes.png)
+
+---
+
+6.Classes, Properties & Methods
+
+- ![Classes, Properties & Methods](public/images/classes-properties-and-methods.png)
+
+---
 
 7.Spread & Rest operator:
 
 - Speard: copy old array/object to new array/object with the same content
 - Rest: converse elements to array and implement array's methods
-  8.Destructuring:
+  ![Spread & Rest operator](public/images/the-spread-rest-operator.png)
+
+---
+
+8.Destructuring:
+
 - Creating the variables referencing elements and propertities in array and object respectively
+
   >     const numbers = [1,2,3];
   >     [num1,num2] = numbers;
   >
   >     // [num1,,num3] = numbers;
   >     console.log(num1,num2);
   >     // console.log(num1,num3);
+
+- ![Destructuring](public/images/destructuring.png)
+
+---
 
 ### Install `REACT PROJECT`
 
@@ -130,3 +170,91 @@ Component in React like a function and we use to reuse code
   >      2.create-react-app <name_project>
   >      3.cd <name_project>
   >      4.npm start
+
+### Structure in `REACT` folder
+
+- _package.json file_: inclusde dependencies created by `creact-react-app` and scripts implement program
+- _node_modules folder_: holds the dependencies and sub-dependencies of our project
+- _public folder_: holds the files we can edit, the script files are added in the source folder
+
+  - _index.html file_:
+
+    - > Important and only has one, we will never add more html pages in this project.
+
+    - > This is single page, where in the end our script files will get injected by that build workflow ==> don't see a script import here and you can edit this file but we won't write any html.
+
+### Component
+
+- This app component actually gets used in the index.js file where you render it into the place of this root
+- ![Component](public/images/components.png)
+
+- ![Component Definition](public/images/component-definition.png)
+
+---
+
+### The basic features and syntax
+
+- #### JSX
+  - JSX is just syntactic sugar for JavaScript, allowing you to write HTMLish code instead of nested React.createElement(...) calls.
+  - Use `React.createElement(<another_component, null, children_of_another_component>)` it has at leat three arguments ==> This is some things will compiled for `html code`
+- #### Functional Component
+
+  - Like component => This is another way we can create the component in `React`
+
+- #### Working with component and re-using them
+
+  - We can focus our code in each file and hence make it much more maintainable
+
+- #### Props Children
+
+  - The place lies between opening and closing tag
+  - ![Props](public/images/props.png)
+
+- #### Handling events with methods
+
+  - Just add reference for function, don't add parenthese
+
+- #### Manipulating the `State`
+
+  - `setState` method in `Component` which allows us to update this special `state property` here and it will then ensure that React gets to know about this update and updates the DOM
+  - ![Manipulating State](public/images/manipulating-state.png)
+
+  ***
+
+- #### Using the useState() Hook for State Manipulation
+
+  - > What is a Hook? A Hook is a special function that lets you “hook into” React features. For example, useState is a Hook that lets you add React state to function components. We’ll learn other Hooks later.
+
+    > When would I use a Hook? If you write a function component and realize you need to add some state to it, previously you had to convert it to a class. Now you can use a Hook inside the existing function component. We’re going to do that right now!
+
+  - Change `component` to `functional component`
+  - useState() nethod:
+    - always returns an array with exactly 2 elements
+    - reference a constant: [state, setState: this is a method]
+      - state: gives access to this object
+      - setState: method to update state
+  - :key: **When use `useState` must change `lowerCase` to `capital`**
+
+  - :key: **Using `Hook` doesn't merge whatever you pass to it with the old state ==> instead it replaces the old state with it**
+
+  - ![Using the useState() Hook for State Manipulation](public/images/state-in-functional-components.png)
+
+  ***
+
+- #### Stateless and Stateful components
+
+  - `Stateful component = smart or container component`: is a component that manages state, no matter if it's using the `useState` hook or a class-based approach with the state property
+  - `Stateless component`: has no internal state manangement and call `dumb`
+
+- #### Passing method references between components
+
+  - Can pass methods also as props so that you can call a method which might change the state in another component
+
+    - > Ex: App.js and Peson.js
+
+      > In App.js: add another property (click={this.switchNameHandler.bind(this, "Max!")})
+
+      > In Person.js: call `onClick` method (onClick={this.switchNameHandler.bind(this, "Max!")})
+
+- #### Adding two way binding
+  - Using `onChange` method. It will be fired whenever the value in this input changes
