@@ -262,4 +262,8 @@ Component in React like a function and we use to reuse code
 ### Working with List and Conditionals
 
 - #### Handling dynamic content the javascript way
+
   - ![Rendering content conditionally](public/images/handling-dynamic-content-the-javascript-way.png)
+
+- #### Outputting lists
+  - ![Outputting lists](public/images/outputting-lists.png)
