@@ -267,3 +267,10 @@ Component in React like a function and we use to reuse code
 
 - #### Outputting lists
   - ![Outputting lists](public/images/outputting-lists.png)
+
+### Styling React components & elements
+
+- #### Adding and Using Radium
+  - Want to use pseudo for css in `.js` file must install thirty package: **`Radium`**
+  - The way:
+    - > `npm install --save radium`
