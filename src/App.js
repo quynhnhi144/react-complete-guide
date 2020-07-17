@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Radium from "radium";
+import Radium, { StyleRoot } from "radium";
 
 import Person from "./Person/Person";
 import "./App.css";
@@ -101,16 +101,17 @@ class App extends Component {
     }
 
     return (
-      <div className="App">
-        <h1>Hi I'm React</h1>
-        <p className={classes.join(" ")}>This is working!!!</p>
-        <button style={style} onClick={this.togglePersonsHandler}>
-          Toggle Persons
-        </button>
+      <StyleRoot>
+        <div className="App">
+          <h1>Hi I'm React</h1>
+          <p className={classes.join(" ")}>This is working!!!</p>
+          <button style={style} onClick={this.togglePersonsHandler}>
+            Toggle Persons
+          </button>
 
-        {persons}
-      </div>
-
+          {persons}
+        </div>
+      </StyleRoot>
       // It hasn'tlocation in component scope ==> Error
       //<p>This is working!!!</p>
     );
