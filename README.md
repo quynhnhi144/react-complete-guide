@@ -271,6 +271,11 @@ Component in React like a function and we use to reuse code
 ### Styling React components & elements
 
 - #### Adding and Using Radium
+
   - Want to use pseudo for css in `.js` file must install thirty package: **`Radium`**
   - The way:
     - > `npm install --save radium`
+
+- #### Enabling & Using CSS modules
+  - The way:
+    - > `npm run eject` ==> y

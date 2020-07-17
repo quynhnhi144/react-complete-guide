@@ -60,10 +60,6 @@ class App extends Component {
       border: "1px solid blue",
       padding: "8px",
       cursor: "pointer",
-      ":hover": {
-        backgroundColor: "lightgreen",
-        color: "black",
-      },
     };
 
     let persons = null;
@@ -85,10 +81,6 @@ class App extends Component {
       );
 
       style.backgroundColor = "red";
-      style[":hover"] = {
-        backgroundColor: "salmon",
-        color: "black",
-      };
     }
 
     let classes = [];
@@ -101,17 +93,15 @@ class App extends Component {
     }
 
     return (
-      <StyleRoot>
-        <div className="App">
-          <h1>Hi I'm React</h1>
-          <p className={classes.join(" ")}>This is working!!!</p>
-          <button style={style} onClick={this.togglePersonsHandler}>
-            Toggle Persons
-          </button>
+      <div className="App">
+        <h1>Hi I'm React</h1>
+        <p className={classes.join(" ")}>This is working!!!</p>
+        <button style={style} onClick={this.togglePersonsHandler}>
+          Toggle Persons
+        </button>
 
-          {persons}
-        </div>
-      </StyleRoot>
+        {persons}
+      </div>
       // It hasn'tlocation in component scope ==> Error
       //<p>This is working!!!</p>
     );
@@ -120,4 +110,4 @@ class App extends Component {
   }
 }
 
-export default Radium(App);
+export default App;
