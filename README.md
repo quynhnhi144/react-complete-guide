@@ -295,4 +295,8 @@ Component in React like a function and we use to reuse code
     - > - Stateful component manage state: class component or class-base component
 
   - #### Class-based vs functional components
+
     - ![Class-based vs functional components](public/images/class-base-and-function-component.PNG)
+
+  - #### Class component lifecycle overview
+    - ![Class component lifecycle overview](public/images/class-component-lifecycle-overview.png)
