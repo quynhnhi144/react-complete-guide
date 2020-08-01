@@ -282,6 +282,7 @@ Component in React like a function and we use to reuse code
     - > `npm run eject` ==> y
 
 - ### Diving deeper into components react internals
+
   - #### A better project structure
     - > Seperating packages:
       >
@@ -289,5 +290,9 @@ Component in React like a function and we use to reuse code
       > - assets: includes images and some files
       > - containers: includes `app.js` file and its respective files
   - #### Comparing Stateless and Stateful components
+
     - > - Stateless component don't manage state: function component
     - > - Stateful component manage state: class component or class-base component
+
+  - #### Class-based vs functional components
+    - ![Class-based vs functional components](public/images/class-base-and-function-component.PNG)
