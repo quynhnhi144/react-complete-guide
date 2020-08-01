@@ -279,3 +279,10 @@ Component in React like a function and we use to reuse code
 - #### Enabling & Using CSS modules
   - The way:
     - > `npm run eject` ==> y
+
+- ### Diving deeper into components react internals
+  - #### A better project structure
+    - > Seperating packages:
+      > * components: includes components of project
+      > * assets: includes images and some files
+      > * containers: includes `app.js` file and its respective files 
