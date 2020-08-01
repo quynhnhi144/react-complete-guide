@@ -277,12 +277,17 @@ Component in React like a function and we use to reuse code
     - > `npm install --save radium`
 
 - #### Enabling & Using CSS modules
+
   - The way:
     - > `npm run eject` ==> y
 
 - ### Diving deeper into components react internals
   - #### A better project structure
     - > Seperating packages:
-      > * components: includes components of project
-      > * assets: includes images and some files
-      > * containers: includes `app.js` file and its respective files 
+      >
+      > - components: includes components of project
+      > - assets: includes images and some files
+      > - containers: includes `app.js` file and its respective files
+  - #### Comparing Stateless and Stateful components
+    - > - Stateless component don't manage state: function component
+    - > - Stateful component manage state: class component or class-base component
