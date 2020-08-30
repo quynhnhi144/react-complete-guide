@@ -25,13 +25,22 @@ class App extends Component {
     return state;
   }
 
-  componentWillMount() {
-    console.log("[App.js] componentWillMount");
+  // componentWillMount() {
+  //   console.log("[App.js] componentWillMount");
+  // }
+
+  componentDidMount() {
+    console.log("[App.js] componentDidMount");
   }
 
-  // componentDidMount() {
-  //   console.log("[App.js] componentDidMount");
-  // }
+  shouldComponentUpdate(nextProps, nextState) {
+    console.log("[App.js] shouldComponentUpdate");
+    return true;
+  }
+
+  componentDidUpdate() {
+    console.log("[App.js] componentDidUpdate");
+  }
 
   nameChangedHandler = (event, id) => {
     /*1. find index of the person by id
