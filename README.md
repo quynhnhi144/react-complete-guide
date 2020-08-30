@@ -117,13 +117,13 @@ Component in React like a function and we use to reuse code
 
   - default exports: we can call it by the another name - import person from .... - import prs from ....
 
+    - named exports: we cann't call it by the another name, must call defined name
 
-      * named exports: we cann't call it by the another name, must call defined name
-      	- import {base} from ...
-      	- import {base as Base} from ...
+      - import {base} from ...
+      - import {base as Base} from ...
 
-      * If have many constant want to import from 1 file: use *
-      	- import * as bundled from ...  ==> when we access variable we can use: bundled.name, bundled.base or ....
+    - If have many constant want to import from 1 file: use \*
+      - import \* as bundled from ... ==> when we access variable we can use: bundled.name, bundled.base or ....
 
 - ![Export and Import Module](public/images/exports-imports-module.png)
 
@@ -300,3 +300,5 @@ Component in React like a function and we use to reuse code
 
   - #### Class component lifecycle overview
     - ![Class component lifecycle overview](public/images/class-component-lifecycle-overview.png)
+    - `getDerivedStateFromProps()`
+      is creation cycle

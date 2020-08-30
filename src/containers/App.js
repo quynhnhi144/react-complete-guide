@@ -29,9 +29,9 @@ class App extends Component {
     console.log("[App.js] componentWillMount");
   }
 
-  componentDidMount() {
-    console.log("[App.js] componentDidMount");
-  }
+  // componentDidMount() {
+  //   console.log("[App.js] componentDidMount");
+  // }
 
   nameChangedHandler = (event, id) => {
     /*1. find index of the person by id
